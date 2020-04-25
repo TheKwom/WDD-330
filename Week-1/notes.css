@@ -1,11 +1,10 @@
 body	{
-	font-family: Josefin Sans;
-	font-weight: 800;
-	width: 55%;
-	max-width: 700px;
+	font-weight: 700;
+	width: 80%;
+	max-width: 100%;
 	border: 20px solid #c6cdd3;
-	padding: 20px;
-	margin: 20px auto;
+	padding: 10px;
+	margin: 10px auto;
 }
 
 .date	{
@@ -14,13 +13,17 @@ body	{
 	font-size: 18px;
 }
 
-.header	{
+header	{
 	color: #1c4877;
 	font-size: 28px;
 
 }
 
-p 	{
+p	{
+	font-size: 16px;
+}
+
+code {
 	font-size: 16px;
 }
 
