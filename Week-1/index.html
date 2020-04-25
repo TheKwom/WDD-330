@@ -5,10 +5,44 @@
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Week 1 Notes</title>
+    <link rel="stylesheet" href="styles/notes.css">
 </head>
 <body>
-    <header>Week 1 Notes - Local Storage,</header>
+    <header><h1>Week 1 Notes - Local Storage</h1></header>
     <main>
+        <p>In this weeks studies I learned about local storage. From what I understand, 
+            local storage is data saved in the browser regardless of whether or not it 
+            is closed. Someone can can save their data to a website, which is then stored
+            locally to their computer, and it will still be there after leaving the site
+        </p>
+        <p>
+            An example I thought of is in my iPhone. I visit many websites for which I have
+            a profile. That means that I typically have a username and password in order to
+            access my profile with all of it's information. When logging into a site for the
+            first time, I save my name and password to my phones local storage, not the website
+            itself. That way, when logging back into my profile, my iPhone retrieves my username
+            and password from the local storage so that I can log in.
+        </p>
+        <p>
+            In the book I went through the example of a story editor. You can write a story, give
+            it a name and save it locally. Here are the functions that allowed me to use local storage.
+            <code>
+                    function loadStory(){
+                        var storyName = document.getElementById("name_input").value
+                        var storyHTML = localStorage.getItem("storyName")
+                        document.getElementById("story_editor").value = storyHTML
+                    }
+                    function saveStory(){
+                        var storyName = document.getElementById("name_input").value
+                        var storyHTML = document.getElementById("story_editor").value
+                        localStorage.setItem(storyName, storyHTML)
+                    }
+                    function displayStory(){
+                        var storyHTML = document.getElementById("story_editor").value
+                        document.getElementById("story_display").innerHTML = storyHTML
+                    }
+            </code>
+        </p>
         <p>Here is a link to my <a href="story_editor.html">Story Editor</a> </p>
     </main>
     <footer> &copy; 2020 | Portfolio | Mike Davis </footer>
