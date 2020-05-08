@@ -1,11 +1,14 @@
 body	{
-	font-weight: 700;
+	background-color: #E2D6CA;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+    padding: 10px;
+    margin: 10px auto;
+    font-weight: 700;
 	width: 80%;
 	max-width: 100%;
-	background-color: #E2D6CA;
-	padding: 10px;
-	margin: 10px auto;
-	font-family: 'Josefin Sans', sans-serif;
 }
 
 .date	{
@@ -19,10 +22,6 @@ header	{
 
 p	{
 	color: #33180B;
-	font-size: 16px;
-}
-
-code {
 	font-size: 16px;
 }
 
