@@ -4,7 +4,22 @@
 <head>
     <meta charset="UTF-8" />
     <title>Array Cardio 💪</title>
+    <link rel="stylesheet" href="main.css">
 </head>
+
+<header>
+    <nav>
+        <ul id="navigation">
+            <li><a href="#" id="menu">&equiv; Menu</a> </li>
+            <li><a href="../Week-1/index.html">Week 1</a></li>
+            <li><a href="../Week-2/index.html">Week 2</a></li>
+            <li><a href="../Week-3/index.html">Week 3</a></li>
+            <li><a href="../Week-4/index.html">Week 4</a></li>
+            <li><a href="../Week-5/index.html">Week 5</a></li>
+            <li><a href="../Week-6/index.html">Week 6</a></li>
+        </ul>
+    </nav>
+</header>
 
 <body>
     <p><em>Psst: have a look at the JavaScript Console</em> 💁</p>
@@ -172,7 +187,7 @@
 
         // 5. Sort the inventors by years lived
 
-        const yearsLived = inventors.sore(function(a, b) {
+        const yearsLived = inventors.sore(function (a, b) {
             const lastGuy = a.pass - a.year;
             const nextGuy = b.passed - b.year;
             return lastguy > nextGuy ? -1 : 1;
