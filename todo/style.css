@@ -1,7 +1,17 @@
 body {
   background: #5CDB95;
   color: #EDF5E1;
-  font-family: 'Rowdies', cursive;}
+  font-family: 'Rowdies', cursive;
+}
+
+button {
+  background-color: #EDF5E1;
+  color: #05386B;
+  font-family: 'Rowdies', cursive;
+  margin-top: 2px;
+  padding: 10px 20px;
+
+  }
 
 .container {
   background: #05386B;
@@ -57,6 +67,10 @@ ul li:hover {
 
 ul li:last-child {
   border-bottom: none;
+}
+
+.button {
+  text-align: center;
 }
 
 .checked {

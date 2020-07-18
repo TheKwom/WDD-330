@@ -28,7 +28,6 @@
     function getValues() {
       var storedValues = window.localStorage.myitems;
       if(!storedValues) {
-        list.innerHTML = '<li>Start to do list</li>';
                          
       }
       else {
@@ -40,4 +39,5 @@
 
   function clearStorage() {
       localStorage.clear();
+      location.reload();
   }
